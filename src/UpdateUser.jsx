@@ -50,7 +50,7 @@ const UpdateUser = () => {
             onChange={(e) => setTitle(e.target.value)}
           />
           <div id="msg"></div>
-          <label for="DD-Date">Due Date</label>
+          <label for="DD-Date">Status</label>
           <input
             id="DD-Date"
             type="text"
