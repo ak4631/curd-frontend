@@ -10,7 +10,11 @@ const CreateUser = () => {
   const Submit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/createUser", { title, desc, status })
+      .post("https://cd1-4797.onrender.com/createUser", {
+        title,
+        desc,
+        status,
+      })
       .then((result) => {
         console.log(result);
         navigate("/");

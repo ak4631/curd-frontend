@@ -11,7 +11,7 @@ const UpdateUser = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/getUser/" + id)
+      .get("https://cd1-4797.onrender.com/getUser/" + id)
       .then((result) => {
         setTitle(result.data.title);
         setDesc(result.data.desc);
@@ -23,7 +23,11 @@ const UpdateUser = () => {
   const Update = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:5000/updateUser/" + id, { title, desc, status })
+      .put("https://cd1-4797.onrender.com/updateUser/" + id, {
+        title,
+        desc,
+        status,
+      })
       .then((result) => {
         console.log(result);
         navigate("/");

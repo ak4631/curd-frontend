@@ -5,14 +5,14 @@ const Users = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000")
+      .get("https://cd1-4797.onrender.com")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:5000/deleteUser/" + id)
+      .delete("https://cd1-4797.onrender.com/" + id)
       .then((res) => {
         window.location.reload();
       })
