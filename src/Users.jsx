@@ -12,7 +12,7 @@ const Users = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete("https://cd1-4797.onrender.com/" + id)
+      .delete("https://cd1-4797.onrender.com" + id)
       .then((res) => {
         window.location.reload();
       })
